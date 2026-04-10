@@ -8,7 +8,7 @@
     
 </head>
 <body>
-    <header>
+    <header id="inicio">
         <nav>
             <img src="imagenes/primeros-auxilios-1.jpg" width="600">
             <h1> PRIMEROS AUXILIOS</h1>
@@ -21,7 +21,7 @@
                 <li><a href="#rcp">RCP</a></li>
                 <li><a href="#obstruccion">Obstrucción de las vías aéreas</a></li>
                 <li><a href="#hemorragia">Hemorragias</a></li>
-                <li><a href="#quebraduras">Quemaduras</a></li>
+                <li><a href="#fracturas">Fracturas</a></li>
                 <li><a href="#contacto">Contactos de emergencia</a></li>
                 <li><a href="#info">Más información</a></li>
                 
@@ -43,6 +43,8 @@
             <img src="imagenes/ryeZT-J4x_1200x0.jpg" width="200" alt="Imágen decorativa de primeros auxilios">
 
         </section>
+        
+        
            <article>
                 <p>El objetivo principal es preservar la vida, evitar el agravamiento de lesiones, aliviar el dolor y facilitar la recuperación, siguiendo la regla <strong>PAS: Proteger, Alertar y Socorrer</strong></p>
             </article>
@@ -134,9 +136,9 @@
             </ul>
         </section><br>
 
-        <section id="quebraduras">
-            <h2>Quebraduras</h2>
-            <p>La quebradura es la ruptura, fisura o grieta total o parcial de un hueso, causada comúnmente por caídas, golpes o movimientos repetitivos.</p>
+        <section id="fracturas">
+            <h2>Fracturas</h2>
+            <p>Una fractura es la ruptura total o parcial de un hueso, comúnmente causada por traumatismos, caídas o movimientos repetitivos. Los síntomas incluyen dolor intenso, inflamación, deformidad y movilidad limitada. </p>
             <h3>Acciones Clave</h3>
             <ul>
                 <li>Evaluar y Tranquilizar: Mantenga a la persona inmovilizada y en calma.</li><br>
@@ -152,7 +154,29 @@
         
         <section id="contacto">
             <h2>Contactos de emergencia</h2>
-            <!--tabla con contactos-->
+            <table border="1">
+                <caption>Contactos-Argentina</caption>
+                <tr>
+                    <th>NOMBRE</th>
+                    <th>CONTACTO</th>
+                    <th>HORAS DE ATENCIÓN</th>
+                </tr>
+                <tr>
+                    <td>Policía</td>
+                    <td>911</td>
+                    <td rowspan="2">24 hs.</td>
+                </tr>
+                <tr>
+                    <td>Emergencia Médica</td>
+                    <td>107</td>
+                </tr>
+                <tr>
+                    <td>Bomberos</td>
+                    <td>100</td>
+                    <td>07:00hs-12:00hs</td>
+                </tr>
+
+            </table>
 
         </section><br>
 
@@ -189,9 +213,16 @@
                     <input type="radio" name="edad"> +18 <br>
                     <input type="radio" name="edad"> -18
 
-                
-                </fieldset>
-            </form>
+                </fieldset><br>
+
+                <fieldset>
+                    <legend><i>Mensaje:</i></legend>
+                    <textarea name="mensaje" rows="6" cols="22" placeholder="Deje su mensaje"></textarea>
+                </fieldset><br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar formulario">
+            </form><br>
+            <a href="#inicio"> <img src="imagenes/home_icon-icons.com_73532.png" width="50"></a>
         </section>
 
 
