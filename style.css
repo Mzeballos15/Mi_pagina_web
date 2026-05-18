@@ -1,2 +1,67 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Italiana&family=Shadows+Into+Light&display=swap');
+
+:root{
+    --azulp: rgb(20, 5, 65);
+    --azuls: rgb(36, 7, 121); 
+    --diez: 10px;
+    --veint: 20px;
+
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+}
+header{
+     text-align: center;
+     display: block;
+     width: auto;
+     height: 20vh;
+     padding: 50px 10px;
+     color: white;
+     background-color: var(--azulp);
+     box-shadow: 0 10px 7px rgba(0,0,0,0.50);
+}
+
+header h1{
+    line-height: 0;
+    font-family: 'Bodoni Moda',serif;
+    font-size: 60px;
+    margin-bottom: var(--diez);
+    margin-top: 30px;
+                                                                /* cambio el tipo de letras del encabezado*/
+}
+
+header h2{
+    font-family: 'Bodoni Moda';
+    letter-spacing: 0.2em;
+    margin-bottom: 35px;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-top: 60px;
+    justify-content: center;
+}
+
+.menu a{
+    text-decoration: none;
+    font-family: ' Italiana';
+    color: white;
+    padding: var(--diez);
+    border-radius: 15px;
+    margin-right: var(--veint);
+}
+ .menu a:hover{
+    cursor: pointer;
+    background-color: var(--azuls);
+    box-shadow: 0 10px 30px black;
+ }
+
 
