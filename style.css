@@ -252,6 +252,38 @@ img, video{
     color: var(--azuls);
  }
 
+ /*  TABLA  */
+
+#contacto{
+    display: block;
+}
+table{
+   border-collapse:collapse;
+   width:100%;
+   margin-top: 30px;
+   margin-bottom: 50px;
+   overflow: hidden;
+   box-shadow: var(--sombra-tj);
+}
+
+caption{
+    text-transform: uppercase;  /*cambio a mayúsculas*/
+    font-size: 3ex;
+    color: rgb(48, 48, 48);
+    text-align: left;
+}
+
+th{
+    text-align: center;
+    padding: 15px;
+}
+
+td{
+    padding:10px
+}
+tr:hover{
+    background-color: rgb(165, 168, 247);
+}
 
 
 
