@@ -1,5 +1,6 @@
 /* Importación de Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Italiana&family=Shadows+Into+Light&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Italiana&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 :root{
     --azulp: rgb(4, 8, 55);
@@ -16,7 +17,7 @@
 
 body{
     background-color:var(--color-fondo);
-    font-family: 'Italiana famyli';
+    font-family: 'Playfair Display';
     color: rgb(0, 0, 0);
     margin: 0;
     padding: 0;
@@ -300,7 +301,7 @@ input[type="text"],
 input[type="email"],
 select,
 textarea {
-  display: block;
+  /*display: block;*/
   width: 80%;
   margin-top: 5px;
   padding: var(--diez);
@@ -319,9 +320,11 @@ textarea:focus{
 }
 
 /* BOTONES */
-input[type="submit"], 
-input[type="reset"] {
+input[type="submit"],
+input[type="reset"]{
     display: inline-flex;
+    background-color: var(--azulp);
+    color: white;
     border-radius: 15px;
     padding: 10px;
     width: 140px;
@@ -329,12 +332,19 @@ input[type="reset"] {
     margin: 5px;
     transition:0.3s;
 }
-input[type="submit"]:hover, 
+input[type="submit"]:hover,
 input[type="reset"]:hover{
-    background-color: var(--azulp);
+    background-color: var(--azuls);
     color: white;
     box-shadow: var(--sombra-btn);
 } 
+
+.botones{
+ justify-content: center;
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 5px;
+}
 
 /*  PIE DE PÁGINA  */
 footer{
@@ -356,6 +366,17 @@ footer h2{
 }
 footer p{
     font-size: 15px;
+}
+
+/*   GRID   */
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;   /* 2 columnas */
+  gap: 20px;
+}                                                                     /*se buscó en internet como ayuda*/
+
+form fieldset:last-of-type {   /*last of type: agarra solo el ultimo fieldset*/
+  grid-column: 1 / -1;         /* el textarea ocupa las 2 columnas */
 }
 
 
