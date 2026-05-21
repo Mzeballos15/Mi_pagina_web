@@ -334,8 +334,30 @@ input[type="reset"]:hover{
     background-color: var(--azulp);
     color: white;
     box-shadow: var(--sombra-btn);
-    
 } 
+
+/*  PIE DE PÁGINA  */
+footer{
+    text-align: center;
+     display: block;
+     width: 100%;
+     padding-bottom: 10px;
+     color: white;
+     background-color: black;
+     border-top: solid var(--azulp) 8px;
+     
+}
+footer h2{
+    color: white;
+    border-bottom: solid var(--azulp) 6px;
+    padding: 0;
+    margin: 0;
+    font-size: 35px;
+}
+footer p{
+    font-size: 15px;
+}
+
 
 
 
