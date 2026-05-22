@@ -15,6 +15,11 @@
     --sombra-btn:0 10px 20px  rgb(19, 19, 19);
 }
 
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
 body{
     background-color:var(--color-fondo);
     font-family: 'Playfair Display';
@@ -47,19 +52,19 @@ header{
 }
 
 header h1{
-    line-height: 0;
-    font-family: 'Bodoni Moda',serif;
+    font-family: 'Bodoni Moda',serif;             /* cambio el tipo de letras del encabezado*/
     font-size: 60px;
-    margin-bottom: var(--diez);
-    margin-top: 20px;
+    margin:0;
     text-shadow: 5px 5px 8px rgba(0, 0, 0, 1);
-                                                                /* cambio el tipo de letras del encabezado*/
+                                         
 }
 
 header h2{
     font-family: 'Bodoni Moda';
     letter-spacing: 0.2em;
     color: white;
+    margin:0;
+    
 }
 
 .menu ul{
@@ -74,7 +79,7 @@ header h2{
 
 .menu a{
     text-decoration: none;
-    font-family: ' Italiana';
+    font-family: 'Italiana';
     color: white;
     padding: var(--diez);
     border-radius: 15px;
@@ -141,7 +146,6 @@ section{
 
 section h2{
    display: block;
-   width: 1fr;
    width: 100%;
 }
 
@@ -164,6 +168,7 @@ section h2::after{
 #bot-inicio {
     display: flex;
     position: fixed;
+    margin: 15px;
     bottom: 5%;
     right: 30px;
     width: 55px;
@@ -224,6 +229,7 @@ img, video{
  #obstruccion img{
     float: right;
     margin-left: 1rem;
+    width: 30%;
  }
 
  #obstruccion iframe{
@@ -234,13 +240,14 @@ img, video{
 #hemorragia img{
  float: left;
  margin-right: 30px;
- width: 15%;
+ width:20%;
 }
 
 #fracturas img{
     float:right;
     margin-left: var(--veint);
     box-shadow: var(--sombra-iv);
+    width:30%
 }
 
  /*  ENLACES  */
@@ -257,6 +264,7 @@ img, video{
 
 #contacto{
     display: block;
+    overflow: hidden;
 }
 table{
    border-collapse:collapse;
@@ -287,6 +295,10 @@ tr:hover{
 }
 
 /*  FORMULARIO  */
+
+ #info{
+    overflow: hidden;
+ }
 fieldset{
     border: solid var(--azulp) 2px;
     border-radius: 0 var(--veint) 0px var(--veint);
@@ -380,16 +392,103 @@ form fieldset:last-of-type {   /*last of type: agarra solo el ultimo fieldset*/
 }
 
 
+/*MEDIA QUERIES*/
 
+/* TABLET */
+@media screen and (max-width: 768px) {
+  section {
+    width: 90%;
+    padding: 10px 20px;
+  }
+  header h1 {
+    font-size: 50px;
+     line-height: 1.2;
+  }
 
+  h2{
+   font-size:25px;
+  }
 
+  form {
+    grid-template-columns: 1fr; /* una sola columna */
+  }
 
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  #rcp img,#quehacer img{
+    width: 60%;
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+ #rcp video{
+        width: 50%;
+        display: block;
+        margin: 0 15px;
+  }
+iframe{
+    width: 100%;
+    display: block;
+    margin: 0 15px; 
 
+}
+}
 
+/* CELULAR */
+@media screen and (max-width: 480px) {
+  section {
+    width: 95%;
+    padding: 10px;  
+  }
+
+  header h1 {
+    font-size: 35px;
+     line-height: 1.2;
+  }
+
+  h2{
+   font-size:20px;
+
+  }
  
+  p, ol,ul, td,th, caption{
+    font-size: 15px;
+  }
+  fieldset{
+    font-size: 15px;
+  }
 
+  article {
+    margin: 1% 5%;
+  }
+  
 
+ #rcp img{
+    width: 60%;
+    float: none;
+    display: block;
+    margin: 0 auto;
+    display: 15px;
+  }
+ #quehacer img,#obstruccion img{
+    width: 50%;
+    margin: 0 auto;
+    display: 15px;
+  }
 
+ #rcp video{
+        float: none;
+        width: 60%;
+        display: block;
+        margin: 0 15px;
+  }
+  iframe{
+    width: 100%;
+    display: block;
+    margin: 0 15px;
 
+    }
 
-
+}
