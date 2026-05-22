@@ -470,12 +470,12 @@ iframe{
     float: none;
     display: block;
     margin: 0 auto;
-    display: 15px;
+   
   }
  #quehacer img,#obstruccion img{
     width: 50%;
     margin: 0 auto;
-    display: 15px;
+  
   }
 
  #rcp video{
