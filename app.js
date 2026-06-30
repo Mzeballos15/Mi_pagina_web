@@ -36,12 +36,12 @@ document.getElementById("mostrar")
   //CAMBIAR COLOR DE VOLVER AL INICIO
 
 function resaltarBtnIn() {
-  const boton = document.getElementById("bot-inicio");
+  const boton = document.querySelector("#bot-inicio");
   boton.style.backgroundColor = "rgb(32, 25, 78)";
 }
  
 function restaurarBtnIn() {
-  const boton = document.getElementById("bot-inicio");
+  const boton = document.querySelector("#bot-inicio");
   boton.style.backgroundColor = "rgb(120, 120, 240)";
 }
 
@@ -67,4 +67,38 @@ function saludarUsuario(){
  document.getElementById("nombreUsu").addEventListener("input", saludarUsuario);
 
  /*----------------------------------------------------------------------------------- */
+ 
+ // VALIDAR FORMULARIO
 
+function validarNombre(nombre) {
+  if (nombre.trim() === "") {
+    throw new Error("Debe ingresar un nombre.");
+  }
+}
+
+function validarEmail(email) {
+     if (email.trim() === "") {
+    throw new Error("Debe ingresar un email.");
+    }
+     if (!email.includes("@")) {
+        throw new Error("Email inválido.");
+    }
+}
+
+
+function validarFormulario() {
+ 
+  const nombre = document.getElementById("nombreUsu").value;
+  const email = document.getElementById("emailUsu").value;
+
+  try {
+    validarNombre(nombre);
+    validarEmail(email);
+    alert("✅ ¡Mensaje enviado con éxito!");
+
+  } catch (error) {
+    alert("❌ " + error.message);
+  }
+}
+
+document.getElementById("info").addEventListener("submit", validarFormulario);
