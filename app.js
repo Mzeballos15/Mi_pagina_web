@@ -31,7 +31,7 @@ function mostrarConsejo() {
 
 document.getElementById("mostrar")
   .addEventListener("click", mostrarConsejo);
-
+/*--------------------------------------------------------------------- */
 
   //CAMBIAR COLOR DE VOLVER AL INICIO
 
@@ -46,12 +46,23 @@ function restaurarBtnIn() {
 }
 
  //al pasar el cursor 
-document.getElementById("bot-inicio")
-  .addEventListener("mouseover",resaltarBtnIn );
- // al sacar el cursor
+document.getElementById("bot-inicio").addEventListener("mouseover",resaltarBtnIn );
+ 
+// al sacar el cursor
+  document.getElementById("bot-inicio").addEventListener("mouseout",restaurarBtnIn);
 
-  document.getElementById("bot-inicio")
-  .addEventListener("mouseout",restaurarBtnIn);
+/*--------------------------------------------------------------------- */
 
+// SALUDAR USUARIO POR SU NOMBRE
 
+function saludarUsuario(){
+    const nombre = document.getElementById("nombreUsu").value;
+    const saludo = document.getElementById("saludo");
 
+    if (nombre === ""){
+        saludo.textContent= ""
+    }else{
+        saludo.textContent= "¡¡Hola "+  nombre  + "!!  "  + " Gracias por tu interés en primeros auxilios"
+    }
+}
+ document.getElementById("nombreUsu").addEventListener("input", saludarUsuario);
