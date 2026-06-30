@@ -33,8 +33,25 @@ document.getElementById("mostrar")
   .addEventListener("click", mostrarConsejo);
 
 
+  //CAMBIAR COLOR DE VOLVER AL INICIO
 
-
+function resaltarBtnIn() {
+  const boton = document.getElementById("bot-inicio");
+  boton.style.backgroundColor = "rgb(32, 25, 78)";
+}
  
+function restaurarBtnIn() {
+  const boton = document.getElementById("bot-inicio");
+  boton.style.backgroundColor = "rgb(120, 120, 240)";
+}
+
+ //al pasar el cursor 
+document.getElementById("bot-inicio")
+  .addEventListener("mouseover",resaltarBtnIn );
+ // al sacar el cursor
+
+  document.getElementById("bot-inicio")
+  .addEventListener("mouseout",restaurarBtnIn);
+
 
 
