@@ -1,6 +1,6 @@
 // CONSEJOS
 
-var consejos = [
+const consejos = [
   "Siempre verificá la seguridad de la escena antes de actuar.",
   "En RCP realizá entre 100 y 120 compresiones por minuto.",
   "Ante una hemorragia, presioná firme con una tela limpia.",
@@ -54,7 +54,6 @@ document.getElementById("bot-inicio").addEventListener("mouseover",resaltarBtnIn
 /*--------------------------------------------------------------------- */
 
 // SALUDAR USUARIO POR SU NOMBRE
-
 function saludarUsuario(){
     const nombre = document.getElementById("nombreUsu").value;
     const saludo = document.getElementById("saludo");
@@ -66,3 +65,6 @@ function saludarUsuario(){
     }
 }
  document.getElementById("nombreUsu").addEventListener("input", saludarUsuario);
+
+ /*----------------------------------------------------------------------------------- */
+
