@@ -392,6 +392,44 @@ form fieldset:last-of-type {   /*last of type: agarra solo el ultimo fieldset*/
 }
 
 
+/*CONSEJOS*/
+#mostrar {
+  display: block;
+  margin: 10px auto;
+  background-color: rgb(4, 8, 55);
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 25px;
+  font-size: 1em;
+  font-family: 'Playfair Display', serif;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 10px 20px rgb(19, 19, 19);
+}
+ 
+#mostrar:hover {
+  background-color: rgb(18, 22, 140);
+  transform: scale(1.05);
+}
+ 
+#textoConsejo {
+  text-align: center;
+  margin: 40px auto;
+  width: 70%;
+  max-width: 900px;
+  padding: 15px 25px;
+  background-color: #e7e4e4;
+  border-left: 6px solid rgb(18, 22, 140);
+  border-radius: 12px;
+  box-shadow: 4px 3px 20px rgb(70, 67, 126);
+  font-style: italic;
+  color: rgb(4, 8, 55);
+}
+
+
+
+
 /*MEDIA QUERIES*/
 
 /* TABLET */

@@ -1,7 +1,7 @@
 # Primeros Auxilios
 
 ## Descripción
-Esta página explica qué son los primeros auxilios y cómo realizar las distintas maniobras de ayuda, con informacion clara,imágenes ilustrativas y videos explicativos. 
+Esta página explica qué son los primeros auxilios y cómo realizar las distintas maniobras de ayuda, con informacion clara,imágenes ilustrativas y videos explicativos. Además incorpora funcionalidades interactivas mediante JavaScript para mejorar la experiencia del usuario.
 
 ## Contenido
  - Intoducción a primeros auxilios
@@ -28,8 +28,15 @@ Esta página explica qué son los primeros auxilios y cómo realizar las distint
  ## Tecnologías utilizadas
  - HTML5
  - CSS
+ - JavaScript
  - Google Fonts
  - Git-GitHub
+
+ ## Funcionalidades implementadas con JavaScript
+- Consejos de primeros auxilios: botón que muestra consejos del array de a uno por click, recorriéndolo en orden.
+- Saludo al usuario: mientras el usuario escribe su nombre en el formulario, aparece un saludo en tiempo real.
+- Cambio de color en botón: al pasar el cursor por el botón de volver al inicio cambia de color.
+- Validación de formulario: al enviar el formulario se valida que el nombre y el email no estén vacíos y que el email sea válido.
 
  ## Mejoras visuales utilizadas
  - Paleta de colores coherente en todo el sitio
