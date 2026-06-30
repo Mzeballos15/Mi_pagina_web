@@ -4,7 +4,7 @@
 Esta página explica qué son los primeros auxilios y cómo realizar las distintas maniobras de ayuda, con informacion clara,imágenes ilustrativas y videos explicativos. Además incorpora funcionalidades interactivas mediante JavaScript para mejorar la experiencia del usuario.
 
 ## Contenido
- - Intoducción a primeros auxilios
+ - Introducción a primeros auxilios
  - Imágenes de como realizar las distintas maniobras
  - Videos explicativos
  - Formulario para obtener información
